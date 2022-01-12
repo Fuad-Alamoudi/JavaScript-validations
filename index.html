@@ -12,10 +12,11 @@
 <body>
     <!-- Start Form -->
     <div class="container">
-        <h1>Contact Me</h1>
+        <h1>Form  Validations</h1>
         <form action="">
-        <input class="inpu-form" type="text" placeholder="Your Name" />
-        <input class="inpu-form" type="email" placeholder="Your Email" />
+        <input id="name" class="inpu-form" type="text" placeholder="Your Name" onblur="myFunction()" />
+        <p id="alert"></p>
+        <input class="inpu-form alert" type="email" placeholder="Your Email" />
         <input class="inpu-form" type="password" placeholder="Password" />
         <input class="inpu-form" type="password" placeholder="confirmed Password" />
         <input class="inpu-form" type="number" placeholder="Your Age" />
@@ -26,6 +27,9 @@
 
     </div>
     <!-- End Form -->
+    
+   
+    <script src="js/main.js"></script>
 </body>
 
 </html>
