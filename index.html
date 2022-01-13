@@ -9,20 +9,32 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="light-mode">
     <!-- Start Form -->
     <div class="container">
-        <h1>Form  Validations</h1>
+        <h1 id="tital">Form  Validations</h1>
+        
         <form action="">
-        <input id="name" class="inpu-form" type="text" placeholder="Your Name" onblur="myFunction()" />
-        <p id="alert"></p>
-        <input class="inpu-form alert" type="email" placeholder="Your Email" />
-        <input class="inpu-form" type="password" placeholder="Password" />
-        <input class="inpu-form" type="password" placeholder="confirmed Password" />
-        <input class="inpu-form" type="number" placeholder="Your Age" />
-        <input class="inpu-form" type="number" placeholder="Phone" />
-        <input class="inpu-form" type="url" placeholder="Url" />
-        <input class="inpu-form text-area" type="text" placeholder="massage" />
+            <div class="mode">
+            <button id="Dark" class="btn-dark">Dark Mode</button>
+            <button id="Ligt" class="btn-dark ligt">Ligt Mode</button>
+        </div>
+        <input id="name" class="inpu-form" type="text" placeholder="Your Name"/>
+        <p id="alert" class="alert"></p>
+        <input id="email" class="inpu-form" type="email" placeholder="Your Email" />
+        <p id="alertemail" class="alert"></p>
+        <input class="inpu-form" type="password" id="password" placeholder="Password" />
+        <p id="alertpassword" class="alert"></p>
+        <input class="inpu-form" type="password" id="confirmedPassword" placeholder="confirmed Password" />
+        <p id="alertconfirmedPassword" class="alert"></p>
+        <input class="inpu-form" id="Age" type="number" placeholder="Your Age" />
+        <p id="alertAge" class="alert"></p>
+        <input class="inpu-form" type="number" id="Phone" placeholder="Phone" />
+        <p id="alertPhone" class="alert"></p>
+        <input class="inpu-form" id="Url" type="url" placeholder="Url" />
+        <p id="alertUrl" class="alert"></p>
+        <input class="inpu-form text-area" type="text" id="Massage" placeholder="Massage" />
+        <p id="alertMassage" class="alert"></p>
     </form>
 
     </div>
